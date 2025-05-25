@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View and manage your BootHub cart with premium soccer boots.">
+  <title>Your Cart | BootHub</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main navigation" role="navigation">
+      <h1 class="logo">BootHub</h1>
+      <button class="hamburger" aria-expanded="false" aria-label="Toggle menu">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about_us.html">About</a></li>
+        <li><a href="feedback.html">Contact Us</a></li>
+        <li><a href="cart.html" aria-current="page">Cart 🛒 <span class="cart-count">0</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main role="main">
+    <section class="page-header">
+      <div class="container">
+        <h1>Your Cart</h1>
+        <p class="subtitle">Review your selected soccer boots and proceed to checkout.</p>
+      </div>
+    </section>
+
+    <section class="cart">
+      <div class="container">
+        <div class="cart-banner">
+          <h2>Free Shipping on Orders Over $200!</h2>
+        </div>
+        <div class="cart-grid" id="cart-grid">
+          <!-- Dynamically populated by JavaScript -->
+        </div>
+        <div class="cart-empty" id="cart-empty" style="display: none; text-align: center; padding: 2rem;">
+          <img src="assets/images/empty-cart.jpg" alt="Empty cart illustration" loading="lazy">
+          <p>Your cart is empty. <a href="catalogue.html">Explore our collection</a> to find your perfect boots!</p>
+        </div>
+        <div class="cart-summary">
+          <h2>Total: <span id="cart-total">$0.00</span></h2>
+          <a href="checkout.html" class="cta-button"><img src="assets/images/credit-card.png" alt="Checkout icon" loading="lazy"> Proceed to Checkout</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="catalogue.html">Catalogue</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="feedback.html">Contact Us</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Connect</h3>
+        <div class="social-icons">
+          <a href="https://twitter.com/boot_hub" aria-label="Twitter"><img src="assets/images/x-logo.png" alt="Twitter logo" width="24" height="24" loading="lazy"></a>
+          <a href="https://instagram.com/boot_hub" aria-label="Instagram"><img src="assets/images/instagram.png" alt="Instagram logo" width="24" height="24" loading="lazy"></a>
+          <a href="https://facebook.com/boot_hub" aria-label="Facebook"><img src="assets/images/facebook.png" alt="Facebook logo" width="24" height="24" loading="lazy"></a>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2025 BootHub. All rights reserved.</p>
+      <small>Made for players. Built for the pitch.</small>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>
